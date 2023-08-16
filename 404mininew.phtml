@@ -7,8 +7,9 @@
 </head>
 <style>
 	* {
-		font-family: "Quicksand" !important;
+		font-family: arial !important;
 		color: #ff8ca0 !important;
+		font-weight: 400;
 	}
 
 	body {
@@ -20,9 +21,8 @@
 	}
 
 	body h1 {
-		color: #A52A2A;
 		text-shadow: 2px 2px 2px #ff8ca0 !important;
-		font-size: 50px;
+		font-size: 35px;
 	}
 
 	.dir {
@@ -34,7 +34,7 @@
 		text-decoration: none;
 		color: #c82333 !important;
 		text-shadow: 1px 1px 1px #ff8ca0 !important;
-
+		font-size: 20px;
 	}
 
 	.dir a:hover {
@@ -64,8 +64,6 @@
 	table,
 	td {
 		border-top: 1px solid #c82333 !important;
-		border-right: 3px solid #c82333 !important;
-		border-bottom: .5px solid #c82333 !important;
 		border-left: 1px solid #c82333 !important;
 		box-sizing: border-box;
 		padding: 8px 8px;
@@ -76,7 +74,7 @@
 	td a {
 		text-decoration: none;
 		color: #c82333 !important;
-		text-shadow: 1px 1px 1px #c82333 !important;
+		font-size: 20px;
 	}
 
 	table,
@@ -86,16 +84,10 @@
 	}
 
 	.button1 {
-		width: 70px;
-		height: 30px;
-		background-color: #c82333;
-		margin: 10px 3px;
 		padding: 5px;
 		color: #ff8ca0 !important;
 		border-radius: 5px;
-		border: 1px solid #ff8ca0 !important;
-		box-shadow: .5px .5px .3px .3px #fff;
-		box-sizing: border-box;
+		box-shadow: 0.5px 0.5px 0.3px 0.3px #fff;
 	}
 
 	.button1 a {
@@ -223,7 +215,7 @@
 	<tr>
 	<td><a href="?dir=' . $dir . '&open=' . $dir . '/' . $file . '">' . $file . '</a></td>
 	<td>' . $jumlah . '</td>
-	<td>
+	<td style=" display: inline-flex; ">
 	<a href="?dir=' . $dir . '&delete=' . $dir . '/' . $file . '" class="button1">Delete</a>
 	<a href="?dir=' . $dir . '&ubah=' . $dir . '/' . $file . '" class="button1">Edit</a>
 	<a href="?dir=' . $dir . '&rename=' . $dir . '/' . $file . '&nama=' . $file . '" class="button1">Rename</a>
